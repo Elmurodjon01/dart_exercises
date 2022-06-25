@@ -1,4 +1,4 @@
-//if we make the class, we cant instantiate it.
+//if we create abstract class, we cant instantiate it.
 //void callSomeone(); this is a abstract method
 //abstract class People is a abstract class and it cant be initiated as People person = People(), it wont work like this.
 
