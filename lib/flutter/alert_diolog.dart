@@ -37,59 +37,71 @@ class AlertDialog extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (_) => CupertinoAlertDialog(
-                    title: Text('Low Battery'),
-                    content: Text(
+                    title: const Text('Low Battery'),
+                    content: const Text(
                       '20% battery remaining.',
                       style: TextStyle(color: Colors.black87),
                     ),
                     actions: [
                       Container(
-                        padding: EdgeInsets.all(30),
+                        padding: const EdgeInsets.all(30),
                         width: 300,
                         height: 150,
-                        child: ListView(children: [
-                          Container(
-                            child: Text(
-                              'Low Power Mode',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
+                        child: ListView(
+                          children: [
+                            Container(
+                              width: double.infinity,
+                              padding: const EdgeInsets.only(bottom: 10),
+                              child: DefaultTextStyle(
+                                style: const TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.blueAccent,
+                                    fontWeight: FontWeight.normal),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: const Text(
+                                    'Low Power Mode',
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              ),
+                            ),
+                            const Divider(
+                              height: 30,
+                            ),
+                            Container(
+                              padding: const EdgeInsets.all(6),
+                              child: DefaultTextStyle(
+                                style: const TextStyle(
                                   fontSize: 20,
-                                  color: Colors.blueAccent,
-                                  fontWeight: FontWeight.normal),
-                            ),
-                            width: double.infinity,
-                            height: 20,
-                          ),
-                          Divider(
-                            height: 10, color: Colors.black38,
-                            endIndent: 40.0,
-                            thickness: 2,
-                          ),
-                          Container(
-                            child: DefaultTextStyle(
-                              child: Text(
-                                'Close',
+                                  color: Colors.blue,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                                textAlign: TextAlign.center,
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.pop(context);
+                                  },
+                                  child: const Text(
+                                    'Close',
+                                  ),
+                                ),
                               ),
-                              style: TextStyle(
-                                fontSize: 20,
-                                color: Colors.blue,
-                                fontWeight: FontWeight.bold,
-                              ),
-                              textAlign: TextAlign.center,
                             ),
-                            padding: EdgeInsets.all(6),
-                          ),
-                        ],),
+                          ],
+                        ),
                       )
                     ],
                   ),
                 );
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text(
+            const Text(
               'Low battery',
               style: TextStyle(color: Colors.black),
             ),
