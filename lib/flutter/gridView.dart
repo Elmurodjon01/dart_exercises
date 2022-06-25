@@ -97,10 +97,7 @@ class ReusableCard extends StatelessWidget {
                     fontSize: 18.0,
                   ),
                 ),
-                IconButton(
-                   icon: Icon(Icons.local_grocery_store),
-                  onPressed: () {  },
-                ),
+                Icon(Icons.local_grocery_store),
               ],
             ),
             Text(price),
