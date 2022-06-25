@@ -1,17 +1,3 @@
-# dartexercises
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# dart_exercises
+dart_exercises==> lib ==> flutter ==>showAlertDialog
+have been tried to build low battery Alert of Ios device. it's been used cupertino Alert Dialog for simple battery alert UI.
+![Simulator Screen Shot - iPhone 11 - 2022-06-25 at 20 54 36](https://user-images.githubusercontent.com/96878908/175772471-0796cfdd-ad23-46f5-ae14-7df77a7ada4d.png)
