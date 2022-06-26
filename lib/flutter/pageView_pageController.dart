@@ -1,8 +1,40 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-      home: MyApp(),
+      home: Splash(),
     ));
+
+
+class Splash extends StatefulWidget {
+  @override
+  _SplashState createState() => _SplashState();
+}
+
+class _SplashState extends State<Splash> {
+  @override
+  void initState() {
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => MyApp()));
+    });
+
+    super.initState();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        child: Image.asset('assets/splash.jpeg',
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+  }
+}
+
 
 class MyApp extends StatefulWidget {
   @override
