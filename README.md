@@ -6,7 +6,7 @@ Have been tried to build low battery Alert of Ios device. it's been used cuperti
 
 
 
-Each app has a day and night mode, it is always requires UI.
+Each app has a day and night mode, it is always required UI function.
 ![imgonline-com-ua-twotoone-TnCaVuPapBhXK6](https://user-images.githubusercontent.com/96878908/175804832-d3a12634-d4e7-4406-982d-e9b0a9f93bb0.jpg)
 
 
@@ -28,5 +28,15 @@ https://user-images.githubusercontent.com/96878908/175805117-45614702-fd7c-44b6-
 
 ![Simulator Screen Shot - iPhone 11 - 2022-06-26 at 18 53 20](https://user-images.githubusercontent.com/96878908/175808877-959e65ec-7ccf-428e-918c-34482506f419.png)
 
+
+Interactive Navigation Bar. 
+UI has drawn based on LinkedIn.
+
+
+
+
+
+
+https://user-images.githubusercontent.com/96878908/175810550-5e9babc2-b6c4-4f64-91f6-4819fae367e1.mp4
 
 
